@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas:
+          "red red blue blue"
+          "green purple purple purple"
+          "yellow yellow yellow yellow";
+        grid-gap: 10px;
+        max-width: 700px;
+        margin: 20vh auto;
+      }
+      .box {
+        border-radius: 30px;
+      }
+      #red {
+        background: red;
+        grid-area: red;
+      }
+      #blue {
+        background: blue;
+        grid-area: blue;
+      }
+      #green {
+        background: green;
+        grid-area: green;
+      }
+      #purple {
+        background: purple;
+        grid-area: purple;
+      }
+      #yellow {
+        background: yellow;
+        grid-area: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="box" id="red"></div>
+      <div class="box" id="blue"></div>
+      <div class="box" id="green"></div>
+      <div class="box" id="purple"></div>
+      <div class="box" id="yellow"></div>
+    </div>
+  </body>
+</html>

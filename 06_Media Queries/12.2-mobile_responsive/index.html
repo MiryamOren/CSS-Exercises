@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /* tablet / smartphone */
+    @media(max-width: 1024px){
+        .box{
+            display: block;
+        }
+    }
+    /* normal */
+    @media(min-width: 1025px){
+        .box{
+            width: calc(25% - 20px);
+            display: inline block;
+            float: left;
+            padding: 20px;
+        }
+    }
+    .box{
+        background-color: rgb(44, 42, 42);
+        color: white;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="box">
+        <h1>First Item</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cupiditate corporis explicabo iure consectetur! Totam fugit accusantium rerum? Dolorum quas necessitatibus, et error labore porro qui aut explicabo, odio, at sed quis voluptate quibusdam. Nisi eaque modi hic dolor tenetur. Nam maiores blanditiis dolorum sequi adipisci, libero placeat vel necessitatibus!</p>
+    </div>
+    <div class="box">
+        <h1>Second Item</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cupiditate corporis explicabo iure consectetur! Totam fugit accusantium rerum? Dolorum quas necessitatibus, et error labore porro qui aut explicabo, odio, at sed quis voluptate quibusdam. Nisi eaque modi hic dolor tenetur. Nam maiores blanditiis dolorum sequi adipisci, libero placeat vel necessitatibus!</p>
+    </div>
+    <div class="box">
+        <h1>Third Item</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cupiditate corporis explicabo iure consectetur! Totam fugit accusantium rerum? Dolorum quas necessitatibus, et error labore porro qui aut explicabo, odio, at sed quis voluptate quibusdam. Nisi eaque modi hic dolor tenetur. Nam maiores blanditiis dolorum sequi adipisci, libero placeat vel necessitatibus!</p>
+    </div>
+    <div class="box">
+        <h1>Fourth Item</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cupiditate corporis explicabo iure consectetur! Totam fugit accusantium rerum? Dolorum quas necessitatibus, et error labore porro qui aut explicabo, odio, at sed quis voluptate quibusdam. Nisi eaque modi hic dolor tenetur. Nam maiores blanditiis dolorum sequi adipisci, libero placeat vel necessitatibus!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            border: white solid 3px;
+            padding: 30px;
+            margin: 50px;
+            position: relative;
+        }
+        div::before, div::after{
+            content: "";
+            position: absolute;
+            background-color: #000;
+            z-index: 0;
+        }
+        div::before{
+            top: -3px;
+            bottom: -3px;
+            left: 15px;
+            right: 15px;
+        }
+        div::after{
+            right: -3px;
+            left: -3px;
+            top: 15px;
+            bottom: 15px;
+        }
+        h1{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Coll Border</h1></div>
+</body>
+</html>

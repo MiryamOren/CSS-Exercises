@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .btn {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        width: 180px;
+        border: black solid 3px;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn::after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #translateY::after {
+        content: "YEAH!";
+        height: 100%;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        transform: translateY(calc(-100% - 3px));
+        transition: all 0.5s;
+      }
+      #translateY:hover::after {
+        transform: translateY(0);
+      }
+      #translate::after {
+        height: 100%;
+        width: 100%;
+        content: "";
+        background-color: rgb(37, 36, 36);
+        position: absolute;
+        transform: translateX(calc(-100% - 3px));
+        z-index: -1;
+        transition: all 3s;
+      }
+      #translate:hover::after {
+        transform: translateX(0);
+      }
+      #translate {
+        transition: all 3s;
+      }
+      #translate:hover {
+        color: #fff;
+      }
+      #rotate::after {
+        height: 180px;
+        width: 55px;
+        content: "";
+        background-color: yellow;
+        position: absolute;
+        top: -183px;
+        left: 0;
+        transition: all 2s;
+        transform-origin: bottom left;
+        z-index: -1;
+      }
+      #rotate:hover:after {
+        transform: rotate(90deg);
+      }
+      #scale-opacity {
+        transition: all 3s;
+      }
+      #scale-opacity::after {
+        font-size: 2em;
+        content: "Scale & Opacity";
+        color: white;
+        background-color: rgb(37, 36, 36);
+        height: 200%;
+        width: 200%;
+        position: absolute;
+        opacity: 0;
+        transition: all 3s;
+      }
+      #scale-opacity:hover::after {
+        opacity: 1;
+        transform: scale(0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="rotate" class="btn">Rotate</div>
+    <div id="translate" class="btn">Translate</div>
+    <div id="translateY" class="btn">TranslateY</div>
+    <div id="scale-opacity" class="btn">Scale & Opacity</div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3040834d37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <style>
+      p {
+        padding: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      a[data-toggle="tooltip"] {
+        position: relative;
+      }
+      a[data-toggle="tooltip"]::after {
+        content: "tooltip";
+        position: absolute;
+        background-color: yellow;
+        color: black;
+        padding: 5px 20px;
+        border-radius: 10%;
+        top: -35px;
+        left: -15px;
+        visibility: hidden;
+      }
+      a[data-toggle="tooltip"]:hover::after {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed labore quae
+      cupiditate repellendus, unde, rerum
+      <a href="#" data-toggle="tooltip">totam</a> vitae eaque sint accusamus
+      beatae porro a eos! Odit mollitia cumque quaerat accusamus aut
+      necessitatibus quae velit error! Perferendis necessitatibus rem
+      voluptatibus delectus facilis inventore alias, deleniti est adipisci,
+      consequuntur hic id dolore soluta aut reprehenderit. Deleniti maiores eos
+      ad tempore harum dolore voluptatem suscipit omnis. Laboriosam accusamus,
+      qui deleniti nam libero odio blanditiis debitis hic voluptates architecto?
+      Ab dignissimos alias aspernatur nostrum sit voluptates tempore earum eos
+      pariatur dolor vero nisi, quod praesentium hic ad fuga culpa incidunt
+      iusto in sint, vel corrupti!
+    </p>
+  </body>
+</html>

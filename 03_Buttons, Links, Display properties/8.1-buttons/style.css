@@ -1,0 +1,122 @@
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: rgb(32, 48, 82);
+    color: white;
+}
+main{
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
+}
+button{
+    font-family: 'Barlow', sans-serif; 
+    border: none;
+    color:white;
+    font-size: 18px;
+    margin: 10px;
+}
+.flat button{
+    border-radius: 0;
+}
+#flat1{
+    background-color: rgb(55, 170, 32);
+    padding: 10px 40px;
+}
+#flat1:hover{
+    background-color: rgb(23, 70, 13);
+}
+#flat2{
+    background-color: red;
+    padding: 5px 25px;
+}
+#flat2:hover{
+    background-color: rgb(131, 7, 7);
+}
+#flat3{
+    background-color:rgb(47, 106, 231);
+    padding: 4px 12px;
+    font-size: 14px;
+}
+#flat3:hover{
+    background-color:rgb(7, 33, 90);
+}
+.round button{
+    border-radius: 20px;
+}
+#round1{
+    background-color:rgb(255, 123, 0) ;
+    padding: 10px 40px;
+}
+#round1:hover{
+    background-color:rgb(177, 116, 2);
+}
+#round2{
+    background-color:rgb(255, 230, 0) ;
+    padding: 5px 25px;
+}
+#round2:hover{
+    background-color:rgb(170, 154, 7);
+}
+#round3{
+    background-color:grey ;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+#round3:hover{
+    background-color:rgba(87, 83, 83, 0.445);
+}
+
+/* flat-gohst */
+#flat-gohst1{
+    border:2px rgb(55, 170, 32) solid;
+    background-color: rgb(32, 48, 82);
+    padding: 10px 40px;
+}
+#flat-gohst1:hover{
+    background-color: rgb(55, 170, 32);
+}
+#flat-gohst2{
+    border:2px red solid;
+    background-color: rgb(32, 48, 82);
+    padding: 5px 25px;
+}
+#flat-gohst2:hover{
+    background-color: red;;
+}
+#flat-gohst3{
+    border:2px rgb(47, 106, 231) solid;
+    background-color: rgb(32, 48, 82);
+    padding: 4px 12px;
+    font-size: 14px;
+}
+#flat-gohst3:hover{
+    background-color:rgb(47, 106, 231);
+}
+
+/* round gohst */
+#round-ghost1{
+    border:2px rgb(255, 123, 0) solid;
+    background-color: rgb(32, 48, 82);
+    padding: 10px 40px;
+}
+#round-ghost1:hover{
+    
+    background-color:rgb(255, 123, 0);
+}
+#round-ghost2{
+    border:2px rgb(255, 230, 0) solid;
+    background-color: rgb(32, 48, 82);
+    padding: 5px 25px;
+}
+#round-ghost2:hover{
+    background-color:rgb(255, 230, 0);
+}
+#round-ghost3{
+    border:2px grey solid;
+    background-color: rgb(32, 48, 82);
+    padding: 4px 12px;
+    font-size: 14px;
+}
+#round-ghost3:hover{
+    background-color:grey;
+}

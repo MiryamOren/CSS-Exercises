@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(189, 189, 168);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        background-color: rgb(32, 10, 54);
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+      .box::after {
+        content: "";
+        background-color: rgb(2, 87, 87);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        transform: translateX(-200px);
+        transition: all 1s;
+      }
+      .box:hover::after {
+        transform: translateX(0px);
+        background-color: slateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

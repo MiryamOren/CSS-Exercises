@@ -1,0 +1,23 @@
+body{
+    background-color:rgb(71, 61, 71);
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(190, 181, 163);
+}
+#about{
+    font-weight:bold;
+}
+#follow{
+    font-size: 24px;
+    text-shadow: rgb(190, 181, 163) 1px 1px 15px;
+}
+.card{
+    background-color: rgb(207, 186, 158);
+    color: slategray;
+    border: 0px black solid;
+    max-width: 350px;
+    height: 500px;
+    box-shadow: 2px 2px 10px rgb(12, 12, 12);
+}
+.card img{
+    width: 350px;
+}
